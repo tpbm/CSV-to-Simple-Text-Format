@@ -1,0 +1,11 @@
+{
+  "name": "CSV to Simple Text Format",
+  "version": "1.0.0",
+  "description": "App to transform CSV text into simple text format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Telmo Marinho (telmo_marinho@hotmail.com)",
+  "license": "ISC"
+}

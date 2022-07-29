@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="convert, text, xml, csv, simple">
+		<meta name="author" content="Telmo P. B. Marinho">
+		<title>CSV to Simple Text File</title>
+		<style>
+			html {
+				height: calc(100% - 1em);
+			}
+			body {
+				display: flex;
+				justify-content: space-between;
+				height: 100%;
+			}
+			body > div {
+				flex-grow: 1;
+				height> 100%;
+				background-color: whitesmoke;
+			}
+			div {
+				display: flex;
+				flex-direction: column;
+				margin: .5em;
+			}
+			#output {
+				height: 90%;
+			}
+		</style>
+		<script>
+			
+			function textConverterWeb() {
+				
+				csvFileContent = document.getElementById('source').value;
+				headerFileContent = document.getElementById('header').value;
+				footerFileContent = document.getElementById('footer').value;
+				templateFileContent = document.getElementById('template').value;
+				
+				// getting all lines from the data (CSV file)
+				let csvLines = csvFileContent.split('\n');
+				
+				// creating the variable that will got the generated content, and adding to it the header
+				let generatedContent = headerFileContent;
+				
+				// working on each line from CSV file
+				csvLines.forEach(line => {
+					let csvFields = line.split(',');
+					let tmp = templateFileContent;
+					for (let j = 0; j < csvFields.length; ++j) {
+						tmp = tmp.replace(`{${j}}`, csvFields[j]);
+					}
+					// adding new each line to the generated content
+					generatedContent = generatedContent + tmp;
+					
+				});
+				
+				// adding the footer to the generated content
+				generatedContent = generatedContent + footerFileContent;
+				
+				// returning the result
+				document.getElementById('output').value = generatedContent;
+				
+			};
+		</script>
+	</head>
+	<body>
+		<div>
+			<h1>
+				CSV to Simple Text
+			</h1>
+			<div>
+				<label for="header">Header</label>
+				<textarea id="header"></textarea>
+			</div>
+			<div>
+				<label for="template">Repeatable</label>
+				<textarea id="template"></textarea>
+			</div>
+			<div>
+				<label for="footer">Footer</label>
+				<textarea id="footer"></textarea>
+			</div>
+			<div>
+				<label for="source">CSV Data</label>
+				<textarea id="source"></textarea>
+			</div>
+			<div>
+				<button onClick="textConverterWeb()">Convert</button>
+			</div>
+		</div>
+		<div>
+			<label for="output">Output</label>
+			<textarea id="output"></textarea>
+		</div>
+	</body>
+</html>
