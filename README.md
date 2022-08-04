@@ -1,52 +1,35 @@
 # CSV-to-Simple-Text-Format (EN)
-Application to transform CSV text into simple text format, through CLI or browser.
-Through CLI, the application behavior was tested using NodeJS v16.15.0 API only.
 
-CONTEXT
-At the beginning, the application was created to allow simple conversion processes, from CSV into XML.
-But, after some tests, I conclude it can be used not only for conversions from CSV into XML, but from CSV to all desired simple text format (plain text) which is a set of repeatable categorized data.
+Greetings,
 
-THE PHILOSOPHY
-Convert the repeatable CSV data, into a desired repeatable simple text format, like XML.
+Sometimes I come across the need to convert CSV data to very specific XML formats, and yes, without a good tool, it becomes quite a tiring and boring job.
 
-HOW TO USE
-Can be used through CLI and browser.
-Using through a browser is the easiest way.
-Using through the CLI requires NodeJS, and the required inputs are passed to the application through files.
-The required input data are:
-1. CSV data (required - CLI and browser)
-2. Desired repeatable template (required - CLI and browser)
-3. Header text, which is a non repeatable text that occurs before the repeatable ones (required - CLI)
-4. Footer text, which is a non repeatable text that occurs after the repeatable ones (required - CLI)
+I know there are several tools on the Net, but I didn't find one that gave me the facility I was looking for. And so as not to have boring moments again :-D, I started this opensource project that allows me to do this type of conversion.
 
-To try easily, please go to
+If you want to know the tool and contribute to the project, be welcome!
+
+NOTE: this tool can be used also to convert CSV into repeatible structured data plain text files, like JSON, YAML, etc.
+
+To try easily, please go to:
 https://tpbm.github.io/CSV-to-Simple-Text-Format/
 
-For more information, please take a look at
+For more information, please take a look at:
 https://github.com/tpbm/CSV-to-Simple-Text-Format/blob/main/About_EN.pdf
 
 # CSV-to-Simple-Text-Format (PT)
-Aplicativo para transformar texto CSV em texto de formato simples, através da CLI ou browser.
-Por meio da CLI, o comportamento do aplicativo foi testado usando apenas a API do NodeJS v16.15.0.
 
-CONTEXTO
-No início, o aplicativo foi criado para permitir processos de conversão simples, de CSV para XML. Mas, após alguns testes, concluí que pode ser usado não apenas para conversões de CSV para XML, mas de CSV para todo o formato de texto simples desejado que seja um conjunto de dados categorizados repetíveis.
+Saudações,
 
-THE PHILOSOPHY
-Converta os dados CSV repetíveis em um texto simples repetível desejado, como XML.
+Algumas vezes me deparo com a necessidade de ter de converter dados em CSV para formatos bem específicos de XML, e sim, sem uma boa ferramenta, torna-se num trabalho bastante cansativo e aborrecido.
 
-COMO USAR
-Pode ser usado através da CLI e do browser.
-Usar através do browser é a maneira mais fácil.
-O uso por meio da CLI requer o NodeJS, e as entradas necessárias são passadas para o aplicativo por meio de arquivos.
-Os dados de entrada necessários são:
-1. Dados CSV (obrigatórios - CLI e browser)
-2. Modelo repetível desejado (obrigatório - CLI e browser)
-3. Texto do cabeçalho, que é um texto não repetível que ocorre antes dos repetíveis (obrigatório - CLI)
-4. Texto de rodapé, que é um texto não repetível que ocorre após os repetíveis (obrigatório - CLI)
+Sei que existem várias ferramentas na Net, mas não encontrei uma que me desse a facilidade que procurava. E para não voltar a ter momentos aborrecidos :-D, dei início a este projecto opensource que permite fazer esse tipo de conversão.
 
-To try easily, please go to
+Se quiser conhecer a ferramenta e contribuir para o projeto, seja bem-vindo!
+
+NOTA: esta ferramenta também pode ser usada para converter CSV em arquivos de texto simples de dados estruturados repetíveis, como JSON, YAML, etc.
+
+Para tentar usar a app, por favor, siga o link abaixo:
 https://tpbm.github.io/CSV-to-Simple-Text-Format/
 
-For more information, please take a look at
+Para mais informações, por favor, siga o link abaixo:
 https://github.com/tpbm/CSV-to-Simple-Text-Format/blob/main/About_EN.pdf
