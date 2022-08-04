@@ -28,8 +28,8 @@ Se quiser conhecer a ferramenta e contribuir para o projeto, seja bem-vindo!
 
 NOTA: esta ferramenta também pode ser usada para converter CSV em arquivos de texto simples de dados estruturados repetíveis, como JSON, YAML, etc.
 
-Para tentar usar a app, por favor, siga o link abaixo:
+Para experimentar usar a app, por favor, siga o link abaixo:
 https://tpbm.github.io/CSV-to-Simple-Text-Format/
 
 Para mais informações, por favor, siga o link abaixo:
-https://github.com/tpbm/CSV-to-Simple-Text-Format/blob/main/About_EN.pdf
+https://github.com/tpbm/CSV-to-Simple-Text-Format/blob/main/About_PT.pdf
