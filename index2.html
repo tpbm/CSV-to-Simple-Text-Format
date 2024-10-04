@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="convert, text, xml, csv, simple">
+        <meta name="author" content="Telmo P. B. Marinho">
+        <title>CSV to Simple Text</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    		<h1 id="title">CSV to Simple Text </h1>
+        <div class="content">
+            <h1>Header</h1>
+            <textarea id="header"></textarea>
+        </div>
+        <div class="content repeatable">
+            <h1>Body (Repeatable)</h1>
+            <textarea id="repeatable"></textarea>
+        </div>
+        <div class="content">
+            <h1>Footer</h1>
+            <textarea id="footer"></textarea>
+        </div>
+        <div class="content source">
+            <h1>Source</h1>
+            <textarea id="source"></textarea>
+        </div>
+        <button onclick="textConverterWeb()">Convert</button>
+        <div class="content output">
+            <h1>Ouput</h1>
+            <textarea id="output"></textarea>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
