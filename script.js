@@ -4,6 +4,7 @@ function textConverterWeb() {
     repeatableFileContent = document.getElementById('repeatable').value;
     footerFileContent = document.getElementById('footer').value;
     csvFileContent = document.getElementById('source').value;
+    separator = document.getElementById('separator').value;
     
     // getting all lines from the data (CSV file)
     let csvLines = csvFileContent.split('\n');
@@ -13,7 +14,7 @@ function textConverterWeb() {
     
     // working on each line from CSV file
     csvLines.forEach(line => {
-    	let csvFields = line.split(',');
+    	let csvFields = line.split(separator);
     	let tmp = repeatableFileContent;
     	for (let j = 0; j < csvFields.length; ++j) {
     		tmp = tmp.replace(`{${j}}`, csvFields[j]);
